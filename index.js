@@ -1,16 +1,31 @@
-const http = require('node:http');
-const PORT = '1986';
-const Host = 'localhost';
+const express = require('express');
+const app = express();
+const data = require('./dataStore');
+const PORT = '4000'
 
-const server = http.createServer((req, res) => {
-    res.setHeader('Content-Type', 'application/json');
-    res.write(JSON.stringify({
-        Name: "Mustapha Rahma Motilola Abiodun",
-        email: "mmrahma@gmail.com"
-    }));
 
+app.get('/user', (req, res) =>{
+res.json({
+   status: "success",
+   Message: "Login successful",
+   data: data
+});
 });
 
-server.listen(PORT, Host, () => {
-    console.log(`This server listen at port http://${Host}:${PORT}`)
+app.post('/user/add', (req, res) => {
+    res.json({
+      
+    });
+});
+
+app.put('/user/update', (req, res) => {
+    res.send();
+});
+
+app.delete('/user/delete', (req, res) => {
+    res.send
+})
+
+app.listen(PORT, () => {
+    console.log(`Server running on port ${PORT}`)
 })
