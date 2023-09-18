@@ -1,0 +1,24 @@
+{
+  "name": "practice-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "Practice-Project"
+  },
+  "keywords": [
+    "geting",
+    "head",
+    "ways"
+  ],
+  "author": "rahma <mmrahama@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
