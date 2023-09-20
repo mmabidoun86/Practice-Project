@@ -14,4 +14,4 @@ const data = [{
     phone: "08088394750",
 }]
 
-export default data;
+module.export = data;
